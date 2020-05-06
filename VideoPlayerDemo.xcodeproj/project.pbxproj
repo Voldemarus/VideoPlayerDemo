@@ -11,6 +11,9 @@
 		1BA7D66024627F3500EFC008 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BA7D65F24627F3500EFC008 /* Assets.xcassets */; };
 		1BA7D66324627F3500EFC008 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1BA7D66124627F3500EFC008 /* MainMenu.xib */; };
 		1BA7D66624627F3500EFC008 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BA7D66524627F3500EFC008 /* main.m */; };
+		1BA7D66F2462805E00EFC008 /* demo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 1BA7D66E2462805E00EFC008 /* demo.mp4 */; };
+		1BA7D6722462816C00EFC008 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BA7D6712462816C00EFC008 /* AVKit.framework */; };
+		1BA7D6742462817400EFC008 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BA7D6732462817400EFC008 /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		1BA7D66424627F3500EFC008 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1BA7D66524627F3500EFC008 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1BA7D66724627F3500EFC008 /* VideoPlayerDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = VideoPlayerDemo.entitlements; sourceTree = "<group>"; };
+		1BA7D66E2462805E00EFC008 /* demo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = demo.mp4; sourceTree = "<group>"; };
+		1BA7D6712462816C00EFC008 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		1BA7D6732462817400EFC008 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BA7D6742462817400EFC008 /* AVFoundation.framework in Frameworks */,
+				1BA7D6722462816C00EFC008 /* AVKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +48,7 @@
 			children = (
 				1BA7D65B24627F3200EFC008 /* VideoPlayerDemo */,
 				1BA7D65A24627F3200EFC008 /* Products */,
+				1BA7D6702462816C00EFC008 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +63,7 @@
 		1BA7D65B24627F3200EFC008 /* VideoPlayerDemo */ = {
 			isa = PBXGroup;
 			children = (
+				1BA7D66D24627FA800EFC008 /* Data */,
 				1BA7D65C24627F3200EFC008 /* AppDelegate.h */,
 				1BA7D65D24627F3200EFC008 /* AppDelegate.m */,
 				1BA7D65F24627F3500EFC008 /* Assets.xcassets */,
@@ -63,6 +73,23 @@
 				1BA7D66724627F3500EFC008 /* VideoPlayerDemo.entitlements */,
 			);
 			path = VideoPlayerDemo;
+			sourceTree = "<group>";
+		};
+		1BA7D66D24627FA800EFC008 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				1BA7D66E2462805E00EFC008 /* demo.mp4 */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		1BA7D6702462816C00EFC008 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1BA7D6732462817400EFC008 /* AVFoundation.framework */,
+				1BA7D6712462816C00EFC008 /* AVKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1BA7D66024627F3500EFC008 /* Assets.xcassets in Resources */,
+				1BA7D66F2462805E00EFC008 /* demo.mp4 in Resources */,
 				1BA7D66324627F3500EFC008 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
